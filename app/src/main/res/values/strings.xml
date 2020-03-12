@@ -32,6 +32,11 @@
     <string name="item_appointment_time">A las %1$s</string>
     <string name="label_my_appointments">Mis citas médicas</string>
     <string name="press_back_again">Presione una vez mas para salir</string>
+    <string name="dialog_exit_create_appointment">¿Estás seguro que deseas salir?</string>
+    <string name="dialog_exit_create_appointment_message">Se perderán todos los datos ingresados</string>
+    <string name="dialog_exit_create_appointment_positive">Salir</string>
+    <string name="dialog_exit_create_appointment_negative">Continuar registro</string>
+    <string name="validate_appointment_description">La descripción es demasiado corta</string>
 
 
 </resources>

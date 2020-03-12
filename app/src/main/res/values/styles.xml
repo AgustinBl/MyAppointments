@@ -13,4 +13,9 @@
         <item name="android:layout_height">65dp</item>
         <item name="android:background">@drawable/boton_redondo</item>
     </style>
+
+    <style name="CustomDialogTheme" parent="@style/Theme.AppCompat.Light.Dialog.Alert">
+        <!--dialog background-->
+        <item name="android:windowBackground">@drawable/bg_dialog</item>
+    </style>
 </resources>
