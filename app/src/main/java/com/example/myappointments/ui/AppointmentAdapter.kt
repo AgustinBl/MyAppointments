@@ -1,9 +1,10 @@
-package com.example.myappointments
+package com.example.myappointments.ui
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.example.myappointments.R
 import com.example.myappointments.model.Appointment
 import kotlinx.android.synthetic.main.item_appointment.view.*
 
@@ -24,7 +25,11 @@ class AppointmentAdapter(private val appointments: ArrayList<Appointment>): Recy
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         return ViewHolder(
-            LayoutInflater.from(parent.context).inflate(R.layout.item_appointment, parent, false)
+            LayoutInflater.from(parent.context).inflate(
+                R.layout.item_appointment,
+                parent,
+                false
+            )
         )
     }
 

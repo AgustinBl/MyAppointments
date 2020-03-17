@@ -1,12 +1,11 @@
-package com.example.myappointments
+package com.example.myappointments.ui
 
-import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.myappointments.PreferenceHelper
 import com.example.myappointments.PreferenceHelper.set
-import kotlinx.android.synthetic.main.activity_create_appointment.*
-import kotlinx.android.synthetic.main.activity_main.*
+import com.example.myappointments.R
 import kotlinx.android.synthetic.main.activity_menu.*
 
 class MenuActivity : AppCompatActivity() {
@@ -34,7 +33,8 @@ class MenuActivity : AppCompatActivity() {
     }
 
     private fun clearSessionPreference(){
-        val preferences = PreferenceHelper.defaultPrefs(this)
+        val preferences =
+            PreferenceHelper.defaultPrefs(this)
         preferences["session"] = false
     }
 }

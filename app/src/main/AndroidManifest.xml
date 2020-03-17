@@ -2,8 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.myappointments">
+    
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
+        android:usesCleartextTraffic="true"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -11,13 +14,13 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".AppointmentsActivity"
-            android:parentActivityName=".MenuActivity"/>
-        <activity android:name=".CreateAppointmentActivity"
-            android:parentActivityName=".MenuActivity"/>
-        <activity android:name=".MenuActivity" />
-        <activity android:name=".RegisterActivity" android:launchMode="singleInstance" />
-        <activity android:name=".MainActivity" android:launchMode="singleInstance">
+        <activity android:name=".ui.AppointmentsActivity"
+            android:parentActivityName=".ui.MenuActivity"/>
+        <activity android:name=".ui.CreateAppointmentActivity"
+            android:parentActivityName=".ui.MenuActivity"/>
+        <activity android:name=".ui.MenuActivity" />
+        <activity android:name=".ui.RegisterActivity" android:launchMode="singleInstance" />
+        <activity android:name=".ui.MainActivity" android:launchMode="singleInstance">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
