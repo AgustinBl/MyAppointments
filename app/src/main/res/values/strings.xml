@@ -43,6 +43,7 @@
     <string name="validate_appointment_time">Seleccionar hora</string>
     <string name="label_error_loading_specialties">Upss.. ocurrió un problema al cargar las especialidades</string>
     <string name="label_error_loading_doctors">Upss.. ocurrió un problema al cargar los médicos</string>
+    <string name="error_loading_hours">No se han podido cargar las horas</string>
 
 
 </resources>
