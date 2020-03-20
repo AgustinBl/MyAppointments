@@ -33,6 +33,7 @@
         android:text="@string/label_email" />
 
     <EditText
+        android:id="@+id/etEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="@color/white"
@@ -47,6 +48,7 @@
         android:text="@string/label_password" />
 
     <EditText
+        android:id="@+id/etPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="@color/white"
