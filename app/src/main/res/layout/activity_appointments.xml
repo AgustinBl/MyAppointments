@@ -5,6 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".ui.AppointmentsActivity"
+    android:animateLayoutChanges="true"
     android:background="@drawable/bg_gradient">
 
     <TextView

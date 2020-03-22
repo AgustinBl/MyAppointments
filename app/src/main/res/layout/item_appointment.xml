@@ -23,7 +23,8 @@
             android:id="@+id/tvAppointmentId"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            tools:text="Cita Médica #7 "/>
+            tools:text="Cita Médica #7 "
+            android:textColor="@color/colorPrimaryDark"/>
 
         <TextView
             android:id="@+id/tvDoctorName"
@@ -46,6 +47,112 @@
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
             tools:text="A las 3:00"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvStatus"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_horizontal"
+                tools:text="Confirmada"
+                android:layout_width="match_parent"
+                android:layout_height="0dp" />
+
+            <ImageButton
+                android:id="@+id/ibExpand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_expand"
+                tools:src="@drawable/ic_expand_less"
+                android:background="@color/white"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            tools:visibility="visible"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:id="@+id/linearLayoutDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <FrameLayout
+                android:id="@+id/fl1"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Especialista"
+                    android:textStyle="italic"
+                    android:layout_marginStart="20sp"
+                    android:textSize="12sp"
+                    android:textColor="@color/colorAccent"/>
+
+                <TextView
+                    android:id="@+id/tvSpecialty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    tools:text="Oftalmología" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/fl2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Motivo"
+                    android:textStyle="italic"
+                    android:layout_marginStart="20sp"
+                    android:textSize="12sp"
+                    android:textColor="@color/colorAccent"/>
+
+                <TextView
+                    android:id="@+id/tvDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    tools:text="Dolor de cornea"/>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/fl3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tipo"
+                    android:textStyle="italic"
+                    android:layout_marginStart="20sp"
+                    android:textSize="12sp"
+                    android:textColor="@color/colorAccent"/>
+
+                <TextView
+                    android:id="@+id/tvType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    tools:text="Consulta"/>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
     </LinearLayout>
 
 
