@@ -1,5 +1,7 @@
 package com.example.myappointments.ui
 
+import android.transition.AutoTransition
+import android.transition.TransitionManager
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -26,6 +28,7 @@ class AppointmentAdapter: RecyclerView.Adapter<AppointmentAdapter.ViewHolder>() 
                 tvType.text = appointment.type
 
                 ibExpand.setOnClickListener {
+                    TransitionManager.beginDelayedTransition(parent as ViewGroup, AutoTransition())
                     if(linearLayoutDetails.visibility == View.VISIBLE){
                         linearLayoutDetails.visibility = View.GONE
                         ibExpand.setImageResource(R.drawable.ic_expand)

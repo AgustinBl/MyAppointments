@@ -7,17 +7,30 @@
     android:id="@+id/mainLayout"
     tools:context=".ui.MainActivity">
 
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:paddingTop="12dp"
-        android:gravity="center_horizontal"
-        android:textColor="@color/white"
-        android:text="@string/label_login"
+        android:layout_height="314dp"
+        android:orientation="vertical"
+        android:background="@drawable/bg_gradient">
 
-        android:background="@drawable/bg_gradient"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingTop="130dp"
+            android:text="@string/label_login"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:text="@string/label_login_help"
+            android:textAlignment="center"
+            android:textColor="@color/white" />
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"

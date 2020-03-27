@@ -75,7 +75,7 @@ class MainActivity : AppCompatActivity() {
                     if(loginResponse.success){
                         createSessionPreference(loginResponse.jwt)
                         toast("Bienvenido " + loginResponse.user.name)
-                        goToMenuActivity()
+                        goToMenuActivity(true)
                     } else {
                         toast(getString(R.string.error_invalid_credentials))
                     }
@@ -85,8 +85,12 @@ class MainActivity : AppCompatActivity() {
         })
     }
 
-    private fun goToMenuActivity(){
+    private fun goToMenuActivity(isUserInput: Boolean = false){
         val intent = Intent(this, MenuActivity::class.java)
+
+        if(isUserInput){
+            intent.putExtra("store_token", true)
+        }
         startActivity(intent)
         finish()
     }

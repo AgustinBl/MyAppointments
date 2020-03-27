@@ -32,6 +32,7 @@
             android:text="@string/label_name" />
 
         <EditText
+            android:id="@+id/etRegisterName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@color/white"
@@ -45,6 +46,7 @@
             android:text="@string/label_email" />
 
         <EditText
+            android:id="@+id/etRegisterEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@color/white"
@@ -59,12 +61,29 @@
             android:text="@string/label_password" />
 
         <EditText
+            android:id="@+id/etRegisterPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:inputType="textPassword"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:textColor="@color/white"
+
+            android:text="@string/label_password_confirmation" />
+
+        <EditText
+            android:id="@+id/etRegisterPasswordConfirm"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@color/white"
             android:inputType="textPassword"/>
 
         <Button
+            android:id="@+id/btnConfirmRegister"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             style="@style/MenuButton"
