@@ -1,5 +1,5 @@
 # Aplicación Android para la reserva de citas médicas.
-En este proyecto se ha utilizado Laravel para desarrollar un sistema web en donde se pueda gestionar toda la información de especialidades, médicos y pacientes. Y así mismo desarrollar una propia API que será la que se implementará en la App de reservas médicas.
+En este proyecto se ha utilizado Laravel para desarrollar un sistema web en donde se pueda gestionar toda la información de especialidades, médicos y pacientes. Y así mismo desarrollar una propia API la cual se implementará en la App de reservas médicas.
 [Aquí el repositorio WEB](https://github.com/AgustinBl/my-appointments)
 ## My Appointments.
 
