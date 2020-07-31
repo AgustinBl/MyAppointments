@@ -9,7 +9,7 @@ Desarrollado con **kotlin**, en este proyecto se pueden apreciar las siguientes 
 
 * DatePickerDialog
 * RaddioButtons
-* RecyclerView & ViewHolder
+* RecyclerView
 * CardView
 * Shared Preferences
 * Snackbar by lazy
